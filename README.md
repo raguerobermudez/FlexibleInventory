@@ -8,7 +8,7 @@ An inventory system design for different types of organizations that handle dive
 
 When I was at university, I worked on ThemePark, a prototype of a virtual campus project. The project was divided among multiple teams. I was part of one four-student team responsible for building the "Learning Component" module. Early in development, we ran into a core issue: we had to duplicate the same code for each learning component, such as projector, artificial intelligence, whiteboard and interactive screen.
 
-Because of this bad design, the work became much harder. The module was not scalable or easy to maintain and it barely worked at all, especially when only two of the four students finished the project.
+Because of this bad design, the work became much harder, especially when only two of the four students finished the project. The module was not scalable or easy to maintain and it barely worked at all.
 
 I knew the design had problems from the start. However, because of lack of time and poor communication in the group, my teammate and I never got the chance to refactor it.
 
