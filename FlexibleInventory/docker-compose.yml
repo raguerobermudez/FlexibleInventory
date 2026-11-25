@@ -30,8 +30,8 @@ services:
             MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD}
             MSSQL_DB_NAME: ${MSSQL_DB_NAME}
         volumes:
-            - ./database:/database:ro
-        entrypoint: ["/bin/bash", "/database/scripts/init-db.sh"]
+            - ./Database:/Database:ro
+        entrypoint: ["/bin/bash", "/Database/Scripts/init-db.sh"]
         restart: "no"
 
     api:
