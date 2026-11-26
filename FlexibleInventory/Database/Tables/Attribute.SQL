@@ -1,0 +1,9 @@
+CREATE TABLE FlexibleInventory.Attribute
+(
+    Attribute_ID UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
+    Name NVARCHAR(100) NOT NULL,
+    Description NVARCHAR(255) NOT NULL,
+    Code NVARCHAR(50) NOT NULL,
+    Data_Type NVARCHAR(50) NOT NULL,
+    CONSTRAINT UQ_Attribute_Code UNIQUE (Code)
+);
