@@ -35,4 +35,4 @@ echo "Recreating database '${DB}'..."
   -Q "IF DB_ID(N'${DB}') IS NOT NULL BEGIN ALTER DATABASE [${DB}] SET SINGLE_USER WITH ROLLBACK IMMEDIATE; DROP DATABASE [${DB}]; END; CREATE DATABASE [${DB}];"
 
 "$SQLCMD" -S "${HOST},${PORT}" -U "$USER" -P "$PASS" -C -b -d "$DB" \
-  -i /Database/Scripts/FlexibleInventoryDatabaseDeploy.sql
+  -i /Database/Scripts/DatabaseInitialization/FlexibleInventoryDatabaseDeploy.sql

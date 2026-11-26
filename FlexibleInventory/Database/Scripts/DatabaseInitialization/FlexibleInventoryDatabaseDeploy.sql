@@ -1,4 +1,4 @@
-:r /Database/Scripts/FlexibleInventorySchema.sql
+:r /Database/Scripts/DatabaseInitialization/FlexibleInventorySchema.sql
 GO
 :r /Database/Tables/Category.sql
 GO
@@ -8,7 +8,7 @@ GO
 GO
 :r /Database/Tables/Attribute_Option.sql
 GO
-:r /Database/Tables/Entity.SQL
+:r /Database/Tables/Item.sql
 GO
-:r /Database/Tables/Entity_Value.sql
+:r /Database/Tables/Item_Attribute_Value.sql
 GO

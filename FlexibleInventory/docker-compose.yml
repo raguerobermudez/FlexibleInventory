@@ -31,7 +31,7 @@ services:
             MSSQL_DB_NAME: ${MSSQL_DB_NAME}
         volumes:
             - ./Database:/Database:ro
-        entrypoint: ["/bin/bash", "/Database/Scripts/init-db.sh"]
+        entrypoint: ["/bin/bash", "/Database/Scripts/DatabaseInitialization/init-db.sh"]
         restart: "no"
 
     api:
